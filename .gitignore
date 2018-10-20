@@ -9,3 +9,6 @@ venv/
 /python_basico.egg-info/SOURCES.txt
 /python_basico.egg-info/dependency_links.txt
 /python_basico.egg-info/top_level.txt
+*.egg-info/
+.tox/
+*/__pycache__/*
