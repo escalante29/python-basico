@@ -5,10 +5,7 @@
 .venv
 venv/
 /.tox/log/tox-0.log
-/python_basico.egg-info/PKG-INFO
-/python_basico.egg-info/SOURCES.txt
-/python_basico.egg-info/dependency_links.txt
-/python_basico.egg-info/top_level.txt
+/python_basico.egg-info/*
 *.egg-info/
 .tox/
 */__pycache__/*
