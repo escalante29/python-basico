@@ -8,7 +8,7 @@ def print_welcome_message():
     print("       by Carlos Escalante")
 
     print(
-        bgcolors.WARNING + "Welcome to the super awesome calculator made with love, in Python programming language, by Carlos Escalante" + bgcolors.ENDC)
+        bgcolors.WARNING + "Welcome to the super awesome calculator made with love, in Python programming language." + bgcolors.ENDC)
 
 def print_error(msg):
     print(bgcolors.FAIL + msg + " " + bgcolors.ENDC)

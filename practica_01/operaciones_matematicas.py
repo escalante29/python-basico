@@ -7,7 +7,12 @@ def resta(a, b):
 
 
 def division(a, b):
-    return a / b
+    try:
+        result = a/b
+    except ZeroDivisionError:
+        print('no se puede dividir entre cero')
+        result = None
+    return result
 
 
 def multiplicacion(a, b):

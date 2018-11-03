@@ -15,7 +15,9 @@ import properties as prop
 
 API = OM.init_operations_dictionary()
 API['sum'] = API['suma']
-# TODO: Continue adding aliases to improve UX
+API['div'] = API['division']
+API['mul'] = API['multiplicacion']
+API['res'] = API['resta']
 
 exit_signal = False
 user_input = None
@@ -31,7 +33,7 @@ while exit_signal != True:
     user_input = str(input(u.bgcolors.OKBLUE + message + u.bgcolors.ENDC))
     counter = 1
 
-    if user_input in prop.truthy_values:  # user wants to exit the program
+    if user_input.lower() in prop.truthy_values:  # user wants to exit the program
         operacion_seleccionada = input(prop.ask_for_operation)
 
         while operacion_seleccionada not in API:
@@ -43,6 +45,7 @@ while exit_signal != True:
 
         try:
             result = API[operacion_seleccionada](operando1, operando2)
+            # TODO: more elegant is to find if there is a substring of the typed operation in the operations list
             u.print_success(f"Seleccionó: {operacion_seleccionada}")
             print(f"El Resultado es {result} \n")
         except ZeroDivisionError:

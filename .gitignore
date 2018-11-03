@@ -9,3 +9,4 @@ venv/
 *.egg-info/
 .tox/
 */__pycache__/*
+/practica_01/test/__pycache__/*.pyc
